@@ -3,6 +3,8 @@ using UnityEditor;
 
 /// <summary>
 /// This class defines a new more simple inspector for the ObjectFollow.cs script.
+///
+/// Made by: Mihael Golob, 30. 8. 2022
 /// </summary>
 [CustomEditor(typeof(ObjectFollower))]
 public class ObjectFollowerEditor : Editor {
@@ -26,7 +28,7 @@ public class ObjectFollowerEditor : Editor {
             if (lerp.boolValue) {
                 EditorGUI.indentLevel++;
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("_lerpMovementSpeed"),
-                    new GUIContent("Lerp movement", "smooth movement"));
+                    new GUIContent("Lerp speed", "smooth movement"));
                 EditorGUI.indentLevel--;
             }
             EditorGUI.indentLevel--;
@@ -43,7 +45,7 @@ public class ObjectFollowerEditor : Editor {
             if (lerp.boolValue) {
                 EditorGUI.indentLevel++;
                 EditorGUILayout.PropertyField(serializedObject.FindProperty("_lerpRotationSpeed"),
-                    new GUIContent("Lerp movement", "smooth movement"));
+                    new GUIContent("Lerp speed", "smooth rotation"));
                 EditorGUI.indentLevel--;
             }
             EditorGUI.indentLevel--;

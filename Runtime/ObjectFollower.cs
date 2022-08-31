@@ -11,6 +11,8 @@ public enum RotationFollowMode { None, Copy, LookAt };
 /// This can be used to make the hierarchy of a character easier to read. For example instead of
 /// childing an axe to the palm of a character which is several levels down the hierarchy you put the script
 /// on the axe and set it to follow the palm.
+///
+/// Made by: Mihael Golob, 30. 8. 2022
 /// </summary>
 public class ObjectFollower : MonoBehaviour {
     // inspector assigned
