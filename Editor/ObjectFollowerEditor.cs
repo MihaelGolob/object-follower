@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEditor;
+using Ineor.Utils.ObjectFollower;
 
 /// <summary>
 /// This class defines a new more simple inspector for the ObjectFollow.cs script.
