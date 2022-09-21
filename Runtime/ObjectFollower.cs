@@ -1,6 +1,8 @@
 using System;
 using UnityEngine;
 
+namespace Ineor.Utils.ObjectFollower {
+
 // enums
 public enum RotationFollowMode { None, Copy, LookAt };
 
@@ -102,4 +104,6 @@ public class ObjectFollower : MonoBehaviour {
 
         transform.localScale = _target.localScale;
     }
+}
+
 }
